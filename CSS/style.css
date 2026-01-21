@@ -1,0 +1,330 @@
+*{
+    scroll-behavior: smooth; /* smoothes scrollen beim klicken im Navigations-Bereich */
+}
+body{
+    margin: 0px; /* Margin ist der Abstand eines Elements zu anderen Elementen - MANTEL */
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* setzt die Höhe der Linien */
+}
+header, nav, main, footer{
+    padding: 30px; /* legt den Innenabstand eines Elements fest; Padding ist der Abstand zwischen Inhalt und Rahmen(border) */
+}
+/*header{
+    background: linear-gradient(90deg, #0f172a,#1e293b,#334155);
+    color: white;
+}*/
+a:focus{                                    /* Macht besser sichtbar wo man sich gerade befindet beim benutzen der Tab-Taste */
+    outline: 3px solid #ffcc00;
+    outline-offset: 2px;
+}
+nav{
+    background: #0E5A6F;
+    text-decoration: none; /* entfernt Textdeko wie Unterstreichungen, Durchstreichungen oder Überlinien */
+    /*display:flex;  vergrößert oder verkleinert flexibel den Inhalt */
+    gap: 5px; /* setzt den Abstand zwischen den Elementen auf 5px */
+    padding: 25px;
+    margin-top: -30px;
+
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px; /* 10px = oben+unten, 10px = links+rechts (bis zu 4 = oben, unten, links, rechts) */
+    border-radius: 6px; /* rundet an den Ecken */
+    margin-left: 20px;
+}
+nav a:hover{
+    background: #157A93;
+}
+#meineperson h2{
+    text-decoration: underline;
+}
+
+#meineperson{
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* Horizontal zentrieren */  
+  gap: 40px;
+  margin: 0 auto;   /* zentriert den gesamten Block auf der Seite */
+  font-size: 1.5rem;
+}
+
+.meineperson-text{
+  max-width: 600px;
+  text-align: center;
+}
+
+.profilbild{
+  margin-left: auto;       
+  width: 220px;
+  border-radius: 8px;
+}
+
+#makro{
+    background: #02064F; 
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+    border: solid white;
+    }
+
+#makro h2{
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+#makro h3{
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+#makro p{
+    margin-left: 10px;
+}
+
+#sterne{
+    background: #050B2C; 
+    color: white;
+    padding: 30px;
+    border: solid white;
+    }
+
+#sterne h2{
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+#sterne h3{
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+#sterne p{
+    margin-left: 10px;
+}
+
+#favorites{
+    background: #B49345; 
+    color: white;
+    padding: 30px;
+    border: solid white;
+    }
+
+#favorites h2{
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+#favorites h3{
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+#favorites p{
+    margin-left: 10px;
+}
+
+#wildlife{
+    background: #8C8576;
+    color: white;
+    padding: 30px;
+    border: solid white;
+    }
+
+#wildlife h2{
+    margin-left: 10px;
+    margin-top: -20px;
+}
+#wildlife h3{
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+#wildlife p{
+    margin-left: 10px;
+}
+
+.galerie {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galerie img {
+  flex: 1 1 300px;     /* wächst, aber startet bei 300px */
+  max-width: 800px;
+  max-height: 800px;    /* verhindert riesige Bilder */
+  height: 400px;
+  /*length: 260px;*/       /* feste Anzeigehöhe */
+  object-fit: contain;  /* schneidet sauber */
+}
+#kurzprofil{
+  max-width: 800px;
+  padding: 20px;
+  display: flex;     
+}
+#eigenschaften{
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  margin-top: -10px;     
+}
+#motivation{
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  margin-top: -20px;      
+}
+.cv-section {
+  margin: 60px 0;
+}
+
+.cv-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #1f2933;
+  padding-bottom: 8px;
+  color: #111827;
+}
+
+.cv-entry {
+  margin-bottom: 35px;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.cv-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.cv-time {
+  color: #2563eb;
+  min-width: 150px;
+}
+
+.cv-title {
+  color: #111827;
+}
+
+.cv-company {
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.cv-entry ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.cv-entry li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.home-section {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.home-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #111;
+  padding-bottom: 6px;
+}
+
+.home-section.alt {
+  background: #f9fafb;
+  padding: 60px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1f2933;
+}
+
+.card p {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.text-block {
+  max-width: 800px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.cta {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+footer{
+    margin-top: -30px;
+}
+.footer_komplett{
+    /*border: 2px solid black;*/
+    text-align: center;
+    gap: 20px;
+}
+.impressum{
+    /*border: 2px solid black;*/
+    text-align: center;
+}
+.impressum-text{
+    font-size: 1rem;
+}
+
+.meinicon{
+    width: 50px;
+    margin-bottom: -10px;
+}
+.meinqr{
+    width: 100px
+}
