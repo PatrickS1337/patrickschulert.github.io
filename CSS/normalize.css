@@ -1,0 +1,48 @@
+/* normalize.css – Basis-Normalisierung für Browser */
+
+/* 1. Bessere Box-Berechnung */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Entfernt Browser-spezifische Margins */
+body {
+  margin: 0;
+}
+
+/* 3. Einheitliche Schriftgrößen & Zeilenhöhe */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 4. Überschriften normalisieren */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* 5. Links */
+a {
+  background-color: transparent;
+}
+
+/* 6. Listen */
+ul, ol {
+  padding-left: 2rem;
+}
+
+/* 7. Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 8. Formulare */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}

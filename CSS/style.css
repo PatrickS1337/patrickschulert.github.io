@@ -2,9 +2,10 @@
     scroll-behavior: smooth; /* smoothes scrollen beim klicken im Navigations-Bereich */
 }
 body{
-    margin: 0px; /* Margin ist der Abstand eines Elements zu anderen Elementen - MANTEL */
+    /* margin: 0px; /* Margin ist der Abstand eines Elements zu anderen Elementen - MANTEL */
     font-family: Arial, sans-serif;
     line-height: 1.6; /* setzt die Höhe der Linien */
+
 }
 header, nav, main, footer{
     padding: 30px; /* legt den Innenabstand eines Elements fest; Padding ist der Abstand zwischen Inhalt und Rahmen(border) */
@@ -359,17 +360,17 @@ nav a:hover{
 }
 
 /* _____________________________________________________________________________ */
-
+/*
 footer{
     margin-top: 300px;
 }
 .footer_komplett{
-    /*border: 2px solid black;*/
+    /*border: 2px solid black;
     text-align: center;
     gap: 20px;
 }
 .impressum{
-    /*border: 2px solid black;*/
+    /*border: 2px solid black;
     text-align: center;
 }
 .impressum-text{
@@ -381,4 +382,39 @@ footer{
 }
 .meinqr{
     width: 100px
+}*/
+/* Haupt-Container bleibt vertikal */
+.footer_komplett{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+/* QR + Linkedin nebeneinander */
+.footer-top{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* QR */
+.meinqr{
+  width: 120px;
+}
+
+/* Copyright */
+.copyright{
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: -10px;
+}
+
+/* Icon direkt im Text */
+.meinicon{
+  width: 40px;
+  height: auto;
 }
