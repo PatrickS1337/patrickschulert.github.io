@@ -50,6 +50,7 @@ nav a:hover{
   gap: 40px;
   margin: 0 auto;   /* zentriert den gesamten Block auf der Seite */
   font-size: 1.5rem;
+  background-color: #ececec;
 }
 
 .meineperson-text{
