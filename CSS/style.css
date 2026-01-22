@@ -18,7 +18,8 @@ a:focus{                                    /* Macht besser sichtbar wo man sich
     outline-offset: 2px;
 }
 nav{
-    background: #0E5A6F;
+    /*background: #0E5A6F;*/
+    background: linear-gradient(90deg, #199bbe, #1894b6, #0E5A6F);
     text-decoration: none; /* entfernt Textdeko wie Unterstreichungen, Durchstreichungen oder Überlinien */
     /*display:flex;  vergrößert oder verkleinert flexibel den Inhalt */
     gap: 5px; /* setzt den Abstand zwischen den Elementen auf 5px */
@@ -63,7 +64,7 @@ nav a:hover{
 }
 
 #makro{
-    background: #02064F; 
+    background: linear-gradient(0deg, #050da8, #03097a, #02064F);
     color: white;
     padding: 30px;
     margin-top: 50px;
@@ -85,7 +86,7 @@ nav a:hover{
 }
 
 #sterne{
-    background: #050B2C; 
+    background: linear-gradient(0deg,#0d1d75, #091452, #050B2C);
     color: white;
     padding: 30px;
     border: solid white;
@@ -105,7 +106,7 @@ nav a:hover{
 }
 
 #favorites{
-    background: #B49345; 
+    background: linear-gradient(0deg, #f3c65d, #d6af52, #B49345);
     color: white;
     padding: 30px;
     border: solid white;
@@ -126,7 +127,7 @@ nav a:hover{
 }
 
 #wildlife{
-    background: #8C8576;
+    background: linear-gradient(0deg, #ddd2ba, #b8af9b, #8C8576);
     color: white;
     padding: 30px;
     border: solid white;
@@ -242,7 +243,7 @@ nav a:hover{
 }
 
 .home-section.alt {
-  background: #f9fafb;
+  background: #f0f2f3;
   padding: 60px 20px;
 }
 
@@ -284,25 +285,6 @@ nav a:hover{
   max-width: 800px;
   line-height: 1.7;
   color: #374151;
-}
-
-.cta {
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #2563eb;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.btn:hover {
-  background: #1d4ed8;
 }
 
 footer{
