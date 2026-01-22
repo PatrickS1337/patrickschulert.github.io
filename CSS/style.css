@@ -37,6 +37,9 @@ nav a{
 nav a:hover{
     background: #157A93;
 }
+
+/* _____________________________________________________________________________ */
+
 #meineperson h1{
     text-decoration: underline;
 }
@@ -60,8 +63,12 @@ nav a:hover{
   width: 220px;
   border-radius: 8px;
 }
+
+/* _____________________________________________________________________________ */
+
 #makro{
-    background: linear-gradient(0deg, #050da8, #03097a, #02064F);
+    /*background: linear-gradient(0deg, #050da8, #03097a, #02064F);*/
+    background: linear-gradient(0deg, #ddd2ba, #b8af9b, #8C8576);
     color: white;
     padding: 30px;
     margin-top: 50px;
@@ -71,28 +78,24 @@ nav a:hover{
     margin-left: 10px;
     margin-top: -20px;
 }
-
 #makro h3{
     margin-left: 10px;
     margin-bottom: -10px;
 }
-
 #makro p{
     margin-left: 10px;
 }
-
 #sterne{
-    background: linear-gradient(0deg,#0d1d75, #091452, #050B2C);
+    /*background: linear-gradient(0deg,#0d1d75, #091452, #050B2C);*/
+    background: linear-gradient(0deg, #ddd2ba, #b8af9b, #8C8576);
     color: white;
     padding: 30px;
     border: solid white;
     }
-
 #sterne h2{
     margin-left: 10px;
     margin-top: -20px;
 }
-
 #sterne h3{
     margin-left: 10px;
     margin-bottom: -10px;
@@ -100,35 +103,30 @@ nav a:hover{
 #sterne p{
     margin-left: 10px;
 }
-
 #favorites{
-    background: linear-gradient(0deg, #f3c65d, #d6af52, #B49345);
+   /*background: linear-gradient(0deg, #f3c65d, #d6af52, #B49345);*/
+   background: linear-gradient(0deg, #ddd2ba, #b8af9b, #8C8576);
     color: white;
     padding: 30px;
     border: solid white;
     }
-
 #favorites h2{
     margin-left: 10px;
     margin-top: -20px;
 }
-
 #favorites h3{
     margin-left: 10px;
     margin-bottom: -10px;
 }
-
 #favorites p{
     margin-left: 10px;
 }
-
 #wildlife{
     background: linear-gradient(0deg, #ddd2ba, #b8af9b, #8C8576);
     color: white;
     padding: 30px;
     border: solid white;
     }
-
 #wildlife h2{
     margin-left: 10px;
     margin-top: -20px;
@@ -137,17 +135,14 @@ nav a:hover{
     margin-left: 10px;
     margin-bottom: -10px;
 }
-
 #wildlife p{
     margin-left: 10px;
 }
-
 .galerie {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .galerie img {
   flex: 1 1 300px;     /* wächst, aber startet bei 300px */
   max-width: 800px;
@@ -155,7 +150,7 @@ nav a:hover{
   height: 400px;
   /*length: 260px;*/       /* feste Anzeigehöhe */
   object-fit: contain;  /* schneidet sauber */
-  
+
   /*
     object-fit steuert, wie das Bild in den Container skaliert wird
 
@@ -165,24 +160,32 @@ nav a:hover{
     - Kein Abschneiden, keine Verzerrung
     - Falls nötig entstehen freie Ränder
   */
+
+/* _____________________________________________________________________________ */
+
 }
 #kurzprofil{
   max-width: 800px;
   padding: 20px;
-  display: flex;     
+  display: flex;
+  margin-left: -20px;     
 }
 #eigenschaften{
   max-width: 800px;
   padding: 20px;
   display: flex;
-  margin-top: -10px;     
+  margin-top: -10px;
+  margin-left: -20px;      
 }
 #motivation{
   max-width: 800px;
   padding: 20px;
   display: flex;
-  margin-top: -20px;      
+  margin-top: -20px;
+  margin-left: -20px;       
 }
+
+/* _____________________________________________________________________________ */
 
 /*
 #additional-info{
@@ -199,24 +202,27 @@ nav a:hover{
   margin-bottom: -5px;
   margin-left: 10px;
 } */
+
+/* _____________________________________________________________________________ */
+
 .cv-section {
   margin: 60px 0;
+  background: linear-gradient(135deg, #f2f2f2,#d9d9d9,#bfbfbf);
+  max-width: 900px;
 }
-
 .cv-section h2 {
   font-size: 1.8rem;
+  margin-top: 60px;
   margin-bottom: 30px;
   border-bottom: 2px solid #1f2933;
   padding-bottom: 8px;
   color: #111827;
 }
-
 .cv-entry {
   margin-bottom: 35px;
   max-width: 800px;
   padding: 20px;
 }
-
 .cv-header {
   display: flex;
   flex-wrap: wrap;
@@ -224,31 +230,32 @@ nav a:hover{
   font-weight: 600;
   margin-bottom: 6px;
 }
-
 .cv-time {
   color: #2563eb;
   min-width: 150px;
 }
-
 .cv-title {
   color: #111827;
 }
-
 .cv-company {
   font-style: italic;
   color: #4b5563;
   margin-bottom: 10px;
 }
-
 .cv-entry ul {
   margin: 0;
   padding-left: 20px;
 }
-
 .cv-entry li {
   margin-bottom: 6px;
   line-height: 1.5;
   color: #374151;
+}
+
+/* _____________________________________________________________________________ */
+
+#knowledge{
+  margin-top: 60px;
 }
 #knowledge h2{
   font-size: 1.8rem;
@@ -257,9 +264,10 @@ nav a:hover{
   padding-bottom: 8px;
   color: #111827;
 }
-.knowledge-entry{
+.knowledge-main{
   display: grid;
   gap: 20px;
+  background: linear-gradient(135deg, #f2f2f2,#d9d9d9,#bfbfbf);
   border: 1px solid #e5e7eb;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -276,23 +284,25 @@ nav a:hover{
   margin: 15px;
 }
 
+/* _____________________________________________________________________________ */
+
 .home-section {
   max-width: 1000px;
   margin: 70px auto;
   padding: 0 20px;
 }
-
 .home-section h2 {
   font-size: 1.9rem;
   margin-bottom: 30px;
   border-bottom: 2px solid #111;
   padding-bottom: 6px;
 }
-
 .home-section.alt {
   background: #f0f2f3;
   padding: 60px 20px;
 }
+
+/* _____________________________________________________________________________ */
 
 .cards {
   /* Grid-Layout aktivieren */
@@ -316,40 +326,39 @@ nav a:hover{
   /* Abstand zwischen den Cards */
   gap: 25px;
 }
-
 .card {
   padding: 25px;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   background: #fff;
 }
-
 .card h3 {
   margin-bottom: 10px;
   color: #1f2933;
 }
-
 .card p {
   color: #4b5563;
   line-height: 1.5;
 }
+
+/* _____________________________________________________________________________ */
 
 .skills {
   list-style: none;
   padding: 0;
   columns: 2;
 }
-
 .skills li {
   margin-bottom: 10px;
   font-weight: 500;
 }
-
 .text-block {
   max-width: 800px;
   line-height: 1.7;
   color: #374151;
 }
+
+/* _____________________________________________________________________________ */
 
 footer{
     margin-top: 300px;
@@ -366,7 +375,6 @@ footer{
 .impressum-text{
     font-size: 1rem;
 }
-
 .meinicon{
     width: 50px;
     margin-bottom: -10px;
