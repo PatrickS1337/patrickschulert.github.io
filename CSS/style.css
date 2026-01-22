@@ -228,6 +228,31 @@ nav a:hover{
   line-height: 1.5;
   color: #374151;
 }
+#knowledge h2{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #1f2933;
+  padding-bottom: 8px;
+  color: #111827;
+}
+.knowledge-entry{
+  display: grid;
+  gap: 20px;
+  border: 1px solid #e5e7eb;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.knowledge-content h3{
+  font-size: 1.3rem;
+  text-decoration: underline;
+  margin-left: 25px;
+}
+.knowledge-content{
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  margin: 15px;
+}
 
 .home-section {
   max-width: 1000px;
@@ -248,8 +273,25 @@ nav a:hover{
 }
 
 .cards {
+  /* Grid-Layout aktivieren */
   display: grid;
+
+  /*
+    Definiert die Spalten des Grids:
+    - repeat(...) vermeidet Wiederholungen
+    - auto-fit erstellt automatisch so viele Spalten,
+      wie in die verfügbare Breite passen
+    - minmax(250px, 1fr) bedeutet:
+        * mindestens 250px breit
+        * maximal gleichmäßig (1fr) den Platz teilen
+    Ergebnis:
+    - Desktop: mehrere Cards nebeneinander
+    - Tablet: weniger Spalten
+    - Mobile: eine Card pro Zeile
+  */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  /* Abstand zwischen den Cards */
   gap: 25px;
 }
 
@@ -288,7 +330,7 @@ nav a:hover{
 }
 
 footer{
-    margin-top: -30px;
+    margin-top: 300px;
 }
 .footer_komplett{
     /*border: 2px solid black;*/
